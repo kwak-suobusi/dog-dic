@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../assets/styles/global.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .container p{
+            display: flex; 
+            justify-content: center; 
+            height: 40px; 
+            align-items: center
+        }
+
+        .container{
+            width: 300px; 
+            height: 300px; 
+            border: 1px solid lightgray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="top-nav-container">
+            <img src="../assets/images/dog.png" alt="logo" width="60" height="60">
+            <button onclick="location.href='../index.html'"> HOME</button>
+        </div>
+    </nav>
+    <div style="height: 80px;"></div>
+    <div style=" height: 600px; width: 1000px; margin: auto;">
+        <h1>강아지 사전</h1>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-items: center; margin-top: 50px;">
+            <div class="container" >
+                <a href="mal.html">
+                    <img style="object-fit: fit;" src="https://pbs.twimg.com/media/EdiRajyUEAIhOma.jpg" width="300px" height="250px">
+                    <p>말티즈</p>
+                </a>
+            </div>
+            <div class="container" >
+                <a href="bichon.html">
+                    <img style="object-fit:fill;" src="https://hprl.github.io/dog_doc/assets/images/doc/bichon_frise.jpg" width="300px" height="250px">
+                    <p>비숑 프리제</p>
+                </a>
+            </div>
+            <div class="container">
+                <a href="reiriever.html">
+                    <img style="object-fit: fit;" src="https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/storypick/editor/2020062615503065168.jpg" width="300px" height="250px">
+                    <p>골든 리트리버</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body> 
+
+</html>

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+        }
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner-container {
+    height: 600px;
+    width: 1000px;
+    margin: auto;
+    background-size: cover;
+}
+
+.content > .banner-container:nth-child(1){
+    background-image: url('https://cdn.pixabay.com/photo/2015/07/09/19/32/dog-838281_1280.jpg');
+}
+
+.content > .banner-container:nth-child(2){
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/07/19/51/grass-3206938_1280.jpg');
+}
+
+.content > .banner-container:nth-child(3){
+    background-image: url('https://cdn.pixabay.com/photo/2016/01/05/17/51/maltese-1123016_1280.jpg');
+}
+
+.banner-contents{
+    padding: 30px 30px;
+    font-size: 25px;
+}
+
+.content > .banner-container:nth-child(2) > .banner-contents,
+.content > .banner-container:nth-child(3) > .banner-contents{
+    color: white;
+}
+
+.content > .banner-container:nth-child(2) > .banner-contents{
+    text-align: right;
+}
+
+.contents-top button {
+    cursor: pointer;
+    color: #1FC2D8;
+    border: none;
+    height: 30px;
+    background-color: white;
+    transition: all 2s;
+    width: 100px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 15px;
+}
+
+.contents h1{
+    display: flex;
+    position: relative;
+    padding: 0;
+    height: 40px;
+}
+
+.contents-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    padding-bottom: 30px;
+    height: 60px;
+}
+
+.content-box{
+    display: relative;
+    margin-top: 100px;
+    height: 600px; 
+    width: 1000px; 
+    margin: auto;
+}
+
+.contents-bottom{
+    border: solid;
+    border-width: 1px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    border-color: lightgrey;
+    height: 400px;
+}
+
+.contents-bottom div p{
+    margin-top: 30px;
+    font-size: 15px;
+    align-items: center; /* 왜 안먹음? ; */
+    justify-content:center;
+}
+
+.contents-bottom img{
+    object-fit: fit; 
+    grid-column: 1 / 2;
+    align-items: center; /* 왜 안먹냐고; */
+    margin-top: 30px;
+}

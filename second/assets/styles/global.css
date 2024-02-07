@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body,p{
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: gray solid 1px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.top-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+
+.top-nav-container button {
+    cursor: pointer;
+    color: #1FC2D8;
+    border-radius: 10px;
+    border-style: solid;
+    height: 30px;
+    background-color: white;
+    border-color: #1FC2D8;
+    transition: all 0.3s;
+    width: 100px;
+}
+
+.top-nav-container button:hover {
+    filter: brightness(90%);
+}
